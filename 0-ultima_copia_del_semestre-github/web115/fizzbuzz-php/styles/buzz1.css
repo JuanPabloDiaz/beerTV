@@ -1,0 +1,86 @@
+.temp {
+  text-align: center;
+  padding: .5%;
+  background-color: rgba(59, 59, 59, .3);
+  color: darkviolet;
+  height: auto;
+  width: auto; 
+	font-size: 24px;
+}
+.temp a {
+	color: whitesmoke; font-size: 24px;
+}
+.temp a:hover {
+	color: gray;
+}
+/*		CSS		*/
+.fizz {
+  font-family: 'Tangerine', serif;
+  font-size: 18px;
+	text-align: center;
+	
+	/* http://juan.diaz.people.cpcc.edu/background/b_w/mar.jpg */
+  background: url(../../images/skylineBogota.svg.png) no-repeat bottom right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;		/*	to center image verticaly	*/
+	background-size: 100%;
+	background-position: center; 		/*	to center image verticaly	*/
+  color: #ffd900;
+	font-family: 'Marck Script', cursive;		/* font for nav and everything but the main*/
+}
+.rectangle {
+  font-family: 'Courgette', cursive;
+  background-color: rgba(86, 16, 91, 0.82);
+  margin: 0px auto;
+  max-width: 800px;
+	border-style: ridge;
+  border-width: 5px;
+  border-color: black;
+	text-align: center;
+	text-shadow: .2px .5px .1px red, 
+              .3px .3px 5px red;
+}	
+		/**********botton*************/
+.button {
+	font-size: 70%;
+	border-radius: 10px;
+	background-color: #585858;
+	padding: 5px 10px 8px 10px;
+  margin-top: 20px;
+	color: ghostwhite;
+	font-weight: bold;
+	text-shadow: .2px .5px .1px darkviolet, 
+                .3px .3px 5px darkviolet;
+}
+.button:hover {
+	animation-name: background-color;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	color: darkgrey;
+	text-shadow: .2px .5px .1px darkviolet, 
+                .3px .3px 5px darkviolet;
+}
+  @keyframes background-color {
+		100% {
+			background-color: #808080;
+			}
+		}
+      input {
+          border-radius: 10px;
+					text-align: center;
+					color: darkviolet;
+					font-weight: bold;
+      }
+/***********************/
+a {
+	text-decoration:none;
+}
+.ideaOne {
+	float: left;
+}
+.ideaTwo {
+	float: right;
+}
+::placeholder {
+	text-align: center;
+}

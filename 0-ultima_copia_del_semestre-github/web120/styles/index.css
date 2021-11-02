@@ -1,0 +1,239 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:1.6em;
+	/* font: 15px/1.5 Arial, Helvetica, sans-serif;*/
+	background-color:#f4f4f4;
+	color:#555;
+	margin:0;
+}
+/*	Global	- it helps with margins and display everything ok*/
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+/* template web110 */
+/* everything in the header is the first and uper box */
+header{
+	background-color: black;	/*blue */
+	color: ivory;	/*white*/
+}
+header h1{	/* website name go rigth */
+	float: left;
+	font-size: 50px;
+	padding-left: 5px;
+}
+header .logo{ /* website Logo go rigth */
+	width: 35%;		/* resize */
+	float: left;
+	margin-top: 15%;
+}
+header ul{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+header li{	/* social media go left */
+	float: right;
+	display: inline;
+	padding: 0px 10px 0px 10px;
+}
+header .socialMedia a{
+	font-size: 35px;	/*icons size*/
+}
+	/***************************/
+	/* to fix botom setting footer */
+footer {
+	text-align: center;
+	background-color: #330000;		/*red*/
+	padding:5px;
+	padding-left:100px;
+}
+#validate a {
+	text-decoration:none;
+}
+#socialmenu li {
+	display: inline;
+  padding: 3px;
+}
+/********************************************************/
+/*	social media	To edit the social menu*/
+.fa {
+  padding: 8px;
+  width: 40px;
+ /* height: 40px;	*/
+  font-size: 20px;
+  text-align: center;
+/*vertical-align: middle;	doesnt not center text vertically*/
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;			/*create a circul*/
+  color: white;					/*text color*/
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+}
+.fa-instagram {
+  background: #125688;
+}
+.fa-linkedin {
+  background: #007bb5;
+}
+.fa-github {
+  background: white;
+  color:black;
+}
+.fa-codepen {
+  background: #211f1b; /*black*/
+}
+.fa-expeditedssl {		/* MyWebspace	*/
+  background:   #cc9900; /*orange*/
+}
+.fa-code {
+  background: #734d26; /*brown*/
+}
+.fa-leaf {
+  background: #008000;	/*green*/
+}
+/*********************************************************/
+/* navbar is second box */
+#navbar{		/* main NavBar website - left */
+	background-color:#333;
+	color:#fff;
+	/*	opacity: 0.7;		*/
+}
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+#navbar li{
+	display:inline;		/*no underline link*/
+}
+#navbar a{
+	color:#fff; /* white */
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+}
+#navbar .current a{		/* highlight current tag */
+	color: orange;
+	font-weight: bold;
+}
+#navbar a:hover{	/* highlight when mouse is under*/
+	color: #cccccc;
+	font-weight: bold;
+}
+/* third box - background-image */
+#bgimg{
+	background-image:url('../../sharedfiles/background/color/showcase.jpg');		background-position:center right;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
+	vertical-align: text-bottom;
+}
+#bgimg h1{		/*	welcome text or promotional	*/
+	color:#fff;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:50px;		/*ideal to use 		vertical-align: middle;	- doesnt work */
+}
+.imgtest{
+	width:150px;
+	float: right;
+}
+#main{
+	float:left;
+	width:70%;
+	padding:0 30px;
+	box-sizing: border-box;
+}
+#sidebar{
+	float:right;
+	width:30%;
+	background: #333;
+	color:#fff;
+	padding:10px;
+	box-sizing: border-box;
+}
+footer{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top:40px;
+}
+@media(max-width:600px){
+	#main{
+	width:100%;
+	float:none;
+}
+		#sidebar{
+		width:100%;
+		float:none;
+	}
+}
+/**************  TOC SECTION  ********************/
+.toc {
+	background:linear-gradient( rgba(0, 255, 0, 0.1) 50%, rgba(0, 0, 0, 0.5)100%),url(../images/boat.jpg);
+	background-repeat: no-repeat;
+  background-attachment: fixed;			/*	to center image verticaly	*/
+	background-size: cover;
+	background-position: center; 
+	font-family: 'Mali', cursive;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 25px;
+	padding: 5%;
+}
+.toc ul {
+	list-style-type:none
+}
+.toc h4 {
+	color: coral;
+	border-bottom: 5px double green;
+	background-color: rgba(0, 255, 0, 0.1);
+	border-radius: 25px;
+	padding: 10px;
+}
+.toc h2 {
+	color: white;
+	border-bottom: 3px solid green;
+	background-color: rgba(255, 255, 0, 0.5);
+	border-radius: 25px;
+	padding: 3%;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px red;
+}
+a {
+	text-decoration: none;
+	color:#555;
+}
+a:hover {
+	font-weight: bold;
+	color:darkseagreen;
+}
+/***************** Comming Soon ******************/
+.backg {
+ 	background: url(../images/mar.jpg) no-repeat bottom right;
+   background-repeat: no-repeat;
+   background-attachment: fixed;			/*	to center image verticaly	*/
+	background-size: cover;
+	background-position: center; 			/*	to center image verticaly	*/
+  color: Maroon;	/*nearWhite*/
+  font-family: 'Marck Script', cursive;		/* font for nav and everything but the main*/
+}
+.rectangle {
+  font-family: 'Courgette', cursive;
+  background-color: rgba(0, 145, 255, 0.23);
+  margin: 0px auto;
+  max-width: 800px;
+	border-style: ridge;
+  border-width: 5px;
+  border-color: #9b1a1a;
+	text-align: center;
+	text-shadow: .2px .5px .1px yellow, 
+                .3px .3px 5px gray;
+}

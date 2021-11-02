@@ -1,0 +1,192 @@
+/* header	*/
+*{
+	  box-sizing: border-box;
+}
+body {
+	background-size: cover;
+  	font-family: sans-serif;
+  	color: white;
+}
+/*	edit navegation bar - Horizontal menu	*/
+#logo img {
+	width: 100px;
+	height: 80px;
+	float: left;
+	padding: 5px 5px;
+}
+
+ul {
+	margin: 0;
+  	list-style: none;	
+  	opacity: 0.7;
+}
+ul li {
+	float: right;
+	width: 180px;
+	height: 40px;
+	background-color: black; 
+	border-radius: 62px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 2px;
+	opacity: 0.8;
+}
+ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+ul li a:hover {
+	background-color: green;
+	border-radius: 62px;
+}
+ul li a ul li {
+	display: none;
+}
+ul li a:hover ul li {
+	display: block;
+	background-color: lightgreen;
+
+}
+
+/*	---------------- 	*/
+
+/*	edit Video Boground		*/
+.background-Video{
+    position: fixed;
+    z-index: -100;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;  
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+    }
+    /* other way to code (.background-wrap)
+.background-wrap{
+    position: fixed;
+    z-index: -1000;
+    width: 100%
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    }
+#video-bg-elem{
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;  
+    }
+    */
+
+/*	before content: */
+
+
+/*	create a transparent box		*/
+/*
+div.transbox {
+  margin-top: 20px;
+  background-color: green;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+div.transbox p {
+  margin: 5%;
+  color: white;
+}
+*/
+/*	side bar right	*/
+
+/*	footer	*/
+
+/*	---fotos--	*/	
+
+
+aside {
+display: block;
+}
+<!--	-->
+figure {
+display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 100px;
+margin-right: 40px;
+}
+<!--	-->
+
+text_image {
+text-align: left;
+}
+photo {
+text-align: center;
+color: red;
+}
+<!--	-->
+address {
+background-color: #E24747;
+text-align: center;
+}
+
+.cont {
+margin:45px auto;
+max-width:100%;
+width:10000px;
+}
+.cont img {
+cursor:pointer;
+padding:0;
+margin:0;
+width:32%;
+max-width:550px;
+object-fit:cover;
+transition:.3s;
+}
+.cont img:hover {
+opacity:.5;
+}
+.galeria{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+}
+.modal {
+position:fixed;
+background:rgba(0,0,0,.8);
+width: 100%;
+height:100%;
+top:0;
+left:0;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+.modal_img{
+width:90%;
+max-width:450px;
+}
+.mod_cerrar{
+font-size:20px;
+font-family:sans-serif;
+border:2px solid white;
+padding:20px;
+color:white;
+margin-top:20px;
+cursor:pointer;
+transition:.3s;
+}
+.mod_cerrar:hover {
+background:white;
+color: black;
+}

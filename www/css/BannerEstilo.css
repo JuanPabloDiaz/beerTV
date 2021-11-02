@@ -1,0 +1,39 @@
+.banner{
+	width: 700px;
+	height: 300px;
+	margin: auto;
+
+	
+	background-size: 100% 100%;		/*	ajuste - reduce image size	*/
+	
+	animation-name: banner;			/*		animacion lo puedo resumir con "animation: banner 10s infinite;"		*/
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes banner{
+
+	0%, 30% {
+		background-image: url(../background/img/relax.jpg);
+		opacity: 1;
+	}
+	/*transition betweeen images: */
+	31%, 34% {
+		opacity: 0.1;
+	}
+	35%, 65% {
+		background-image: url(../background/img/nature.jpg);
+		opacity: 1;
+	}
+
+	/*transition betweeen images: */
+	66%, 69% {
+		opacity: 0.1;
+	}
+
+	70%, 100% {
+		background-image: url(../background/img/bogota_skyline.jpg);
+		opacity: 1;
+	}
+}

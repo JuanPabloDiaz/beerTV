@@ -1,0 +1,211 @@
+*{
+  box-sizing: border-box;
+}   /*  gives margen and a box for all text  */
+
+
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+/*	everything until the navegation bar (except btn): welcome text, box over video	*/
+.header-video_container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.container{
+  max-width:960px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+}
+
+.fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height:50%;
+  min-width:100%;
+}
+
+.header-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background: #F07F28;
+  opacity:0.65;
+
+}
+
+.header-contentWelcome{
+  z-index:3;
+}
+
+.header-contentWelcome h1{
+  font-size:50px;
+  margin-bottom:0;
+  text-align: center;
+}
+
+.header-contentWelcome p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+  text-align: center;
+}
+
+.btn{
+  background: #472206;
+  color: White;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 62px;
+  margin-left: 43%;}
+
+.sectionQuienesSomos{
+  padding:20px 0;
+}
+
+.MisionVision{
+color:#fff;
+background-image: url("../background/img/relax.jpg");
+}
+
+.Rayban {
+color:#fff;
+}
+/*	
+	background-image: url("../background/img/white/boteSection.jpg");
+	min-height:400px;
+	max-width:4000px;
+*/
+.Tissot {
+color:#fff;
+}
+/*	
+	background-image: url("../background/img/white/boteSection.jpg");
+	min-height:400px;
+	max-width:4000px;
+*/
+
+@media(max-width:960px){
+  .container{
+    padding-right:3rem;
+    padding-left:3rem;
+  }
+}
+
+/*---*/
+
+/*  edit navegation bar - Horizontal menu */
+#logo img {
+  width: 100px;
+  height: 80px;
+  float: left;
+  padding: 5px 5px;
+}
+/*---*/
+nav.bar {
+    z-index:3;
+}
+ul {
+  margin: 0;
+  list-style: none; 
+  opacity: 0.7;
+}
+
+ul li {
+  float: right;
+  width: 180px;
+  height: 40px;
+  background-color: black; 
+  border-radius: 62px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 2px;
+  opacity: 0.8;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+ul li a:hover {
+  background-color: green;
+  border-radius: 62px;
+}
+ul li a ul li {
+  display: none;
+}
+ul li a:hover ul li {
+  display: block;
+  background-color: lightgreen;
+}
+
+/*  Galleria section  */
+.row h3{
+  font-size:50px;
+  margin-bottom:0;
+  color: gray;
+  text-align: center;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 20%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+div img{
+  width: 200px;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+/*
+#main-footer{
+color:#fff;
+text-align: center;
+background-image: url("../background/img/relax.jpg");
+min-height:50px;
+}
+
+*/
+

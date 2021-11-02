@@ -1,0 +1,667 @@
+
+.mySlides 
+{
+	display:none;
+}
+
+a.book:link, a.book:visited 
+{
+    	background-color: #f2b179;
+    	color: green;
+    	padding: 10px 15px;
+    	text-align: center;
+   	text-decoration: none;
+    	display: inline-block;
+	width: 125px;
+}
+
+a.book:hover, a.book:active 
+{
+    	background-color: green;
+	text-align: center;
+}
+
+.video
+{ 
+    	display: block;
+	width: auto;
+	padding: 0 200px 0 250px;
+	margin: 5px; 
+}
+
+.navbar-default
+{
+   	background-color:#333;
+    	border-color: green;
+}
+
+nav a:hover 
+{
+    	background-color: #FFE6D0;
+	color: green;     
+}
+
+a:hover 
+{
+	color: green;      
+}
+
+a
+{	
+    	color: #FFE6D0;
+    	text-align: left;
+    	padding: 15px 16px;
+    	text-decoration: none;
+	letter-spacing: 2.5px;
+	word-spacing: 5px;
+}
+
+form
+{
+	font-family: sans-serif;
+	padding: 10px;
+}
+
+lable
+{
+	float: left;
+	width: 100%;
+	clear: left;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+
+input, textarea
+{
+	margin-top: 20px;
+	display: block;
+}
+
+#mySubmit
+{
+	margin-left: 110px;
+}
+
+.bird 
+{
+   	 width: 200%;
+    	 height: auto;
+	 float: left;
+}
+
+table
+{
+	font-family: 'PT Sans';
+}
+
+.about
+{
+	font-family: 'PT Sans';	
+}
+
+.about1
+{
+	width: 90%;
+	padding: 0 20px 20px 20px;
+	float: left;
+}
+
+h2
+{
+	font-family: 'PT Sans';
+	word-spacing: 2px;
+	text-indent: 1em;
+	width: 80%;
+}
+
+h1
+{
+	font-family: 'PT Sans';
+	word-spacing: 2px;
+	text-indent: 1em;
+	text-align: center;
+}
+
+
+#axum
+{
+	float: left;
+	margin: 1px;
+}
+
+#container
+{
+	background-color: #FFE6D0;
+	color: #006600;
+	min-width: 960px;
+	font-family:Arial, Verdana, sans-serif;
+}
+
+header 
+{ 
+	
+	background-position: left;
+	background-repeat: repeat-x;
+	color: #cc66cc;
+	text-align: right;
+	border-bottom: 2px solid #000000;
+	font-family:Georgia, "Arial", serif;
+}
+
+aside
+{
+	float: right;
+	width: 300px;
+	line-height: 200%;
+	background-color: #C0C0C0;
+}
+
+#p1
+{
+	letter-spacing: 1.5px;
+	word-spacing: 5px;
+	line-height: 150%;
+}
+
+div.item
+{
+	vertical-align: top;
+    	display: inline-block;
+    	text-align: center;
+    
+}
+
+.caption 
+{
+    	display: block;
+}
+
+body 
+{
+	background-color: #FFE6D0;
+	margin: 0 auto;
+   	color: #191970;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+main
+{
+	background-color: #FFE6D0;
+	margin: 50px 50px 0 50px;
+	color: #006600;
+}
+
+.tour
+{
+	background-color: #FFE6D0;
+	margin: 50px 50px 50px 1px;
+	color: #006600;
+	padding: 20px;
+}
+
+.active 
+{ 
+	background-color: white; 
+}
+
+.lalibela
+{
+	margin: 0 0 0 320px;
+}
+
+
+.epiphany
+{
+	width: 93%;
+    	height: auto;
+	margin: 10px 0 0 0;
+
+}
+
+.walya_ibex
+{
+	width: 93%;
+    	height: auto;
+	margin: 10px 10px 0 10px;
+}
+
+.image1 
+{
+   	 width: 100%;
+    	 height: auto;
+	 float: left;
+}
+
+.image2 
+{
+   	 width: 30%;
+    	 height: auto;
+	 border-radius: 8px;
+	 float: left; 
+}
+
+.image3 
+{
+   	 width: 50%;
+    	 height: auto;
+	 border-radius: 8px;
+	 float: right;
+}
+
+.image4
+{
+   	 width: 40%;
+    	 height: auto;
+	 border-radius: 8px;
+	 float: left;
+}
+
+.image5
+{
+   	 width: 40%;
+    	 height: auto;
+	 border-radius: 8px;
+	 float: left;
+  	 padding: 30px 50px 30px 50px;}
+
+.south
+{
+	margin: 20px 200px 20px 200px;
+}
+
+.ibex
+{
+	 width: 50%;
+    	 height: auto;
+	 border-radius: 8px;
+	 display: block;
+	 margin-left: auto;
+    	 margin-right: auto;
+}
+
+.p3, .p4
+{
+	letter-spacing: 2.5px;
+	word-spacing: 6px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.p5
+{
+	letter-spacing: 2.5px;
+	word-spacing: 6px;
+	font-size: 25px;
+	text-align: center;
+	margin: auto;
+}
+
+.p6
+{
+	font-weight: 600;
+	letter-spacing: 0.3em;
+	font-size: 20px;
+	line-height: 0.5em;
+	font-family:Georgia, "Times New Roman", serif;
+	text-align: left;
+}
+
+.p7
+{
+	font-size: 15px;
+	text-align: center;
+	width: 70%;
+}
+
+.p8
+{
+	font-size: 15px;
+	text-align: center;
+	width: 80%;
+}
+
+#p9
+{
+	letter-spacing: 2.5px;
+	word-spacing: 6px;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+p.p2
+{
+	letter-spacing: 1.5px;
+	word-spacing: 5px;
+	line-height: 100%;
+	font-weight: 100;
+	margin-right: 100px;
+    	margin-left: 100px;
+	text-align: left;
+	font-size: 20px;
+}
+
+p
+{
+	text-indent: 2em;
+	font-family: Sans-serif;
+}
+
+p.p3
+{
+	letter-spacing: 1.5px;
+	word-spacing: 5px;
+	line-height: 100%;
+	font-weight: 100;
+	margin-right: 100px;
+    	margin-left: 800px;
+	text-align: right;
+	font-size: 20px;
+}
+
+.header 
+{
+	float: left;
+    	position: relative;
+    	text-align: center;
+    	color: white;
+	border-collapse: collapse;
+}
+
+.centered 
+{
+    	position: absolute;
+    	top: 0%;
+    	left : 50%;
+}
+
+.bottom-right 
+{
+    	position: absolute;
+    	bottom: 8px;
+    	right : 16px;
+}
+	
+h2 
+{ 
+	line-height: 2.5em;
+	background-color:#AEAED4;
+	color:#191970;
+	font-family:Georgia, "Times New Roman", serif;
+	text-align: center; 
+}
+
+h2:hover
+{
+	color: green;
+}
+
+.head2
+{
+	font-weight: 600;
+	letter-spacing: 0.3em;
+	font-size: 35px;
+	line-height: 0.5em;
+	color:#191970;
+	font-family:Georgia, "Times New Roman", serif;
+	text-align: left;
+}
+
+h1 
+{
+	letter-spacing: 0.5em;
+	font-size: 35px;
+}
+
+ul 
+{
+	font-weight:bold;
+}
+
+footer 
+{ 
+	font-style: italic;
+	font-size: .75em; 
+}
+
+nav 
+{ 
+	font-size: 16px;
+	background-color:black;
+	font-family:Georgia, "Times New Roman", serif;
+	word-spacing: 4em;
+	letter-spacing: 0.5em;
+	line-height: 3em;
+}
+
+a.thicker 
+{
+    	font-weight: 900;
+}
+
+a 
+{
+	color:#CD853F;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+div 
+{ 	
+	font-family:Georgia, "Times New Roman", serif;
+	word-spacing: 0.1em;
+	text-indent: 0.1em;	
+}
+
+input[type=text], select, textarea 
+{
+    	width: 97.8%;
+   	padding: 8px;
+    	border: 1px solid #FFE6D0;
+    	margin: 1px;
+    	margin-bottom: auto;
+    	resize: vertical;
+	word-spacing: 0.1em;
+	text-indent: 0.1em;
+}
+
+input[type=submit] 
+{
+    	background-color: #4CAF50;
+    	padding: 12px 20px;
+    	border: none;
+    	cursor: pointer;
+}
+
+.column 
+{
+	margin: auto;
+    	width: 65%;
+	font-size: 20px;
+	font-family: comic sans mS;
+	word-spacing: 0.3em;
+	letter-spacing: 0.5px;
+}
+
+.book 
+{
+	margin: auto;
+    	width: 65%;
+	font-size: 20px;
+	font-family: comic sans mS;
+	word-spacing: 0.3em;
+	letter-spacing: 0.5px;
+}
+
+
+.row:after 
+{
+    	content: "";
+   	display: table;
+    	clear: both;
+}
+
+@media screen and (max-width: 600px) 
+{
+    	.column, input[type=submit] 
+{
+        width: 100%;
+        margin-top: 0;
+}
+}
+
+main
+{
+	padding: 10px 200px 10px 200px;
+}
+
+.container:after, .container:before, .panel:after, .panel:before, .row:after, .row:before, .row-padding:after, .row-padding:before,
+.cell-row:before, .cell-row:after, .clear:after, .clear:before, .bar:before, .bar:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container, .panel
+{
+	padding: 0.01em 16px;
+}
+
+content display-container
+.animate-top
+{
+	position: relative;
+	animation: animatetop 0.4s;
+}
+
+.display-container
+{
+	position: relative;
+}
+
+.display-container:hover .display-hover
+{
+	display: block;
+}
+
+.display-container:hover span.display-hover
+{
+	display: inline-block;
+}
+
+.display-hover
+{
+	display: none;
+}
+
+.display-bottomleft
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.large
+{
+	font-size: 18px!important;
+}
+
+.padding-16
+{
+	padding-top: 16px!important;
+	padding-bottom: 16px!important;
+}
+
+.black,.hover-black:hover
+{
+	color: #fff!important;
+	background-color: #000!important;
+}
+
+.display-bottomright
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.button:hover
+{
+	color: #000!important;
+	background-color: #ccc!important;
+}
+
+.button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button
+{
+	width: 100%;
+}
+
+.bar .button
+{
+	white-space: normal;
+}
+
+.bar-block .dropdown-hover .button, .dropdown-click .button
+{
+	width: 100%;
+	text-align: left;
+	padding: 8px 16px;
+}
+
+.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child
+{
+	background-color: #ccc;
+	color: #000;
+}
+
+.button:disabled
+{
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+
+.button
+{
+	user-select: none;
+}
+
+.button
+{
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.display-left
+{
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%,-50%);
+	
+}
+
+.display-right
+{
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%,-50%);
+	}
+
+.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button
+{
+	width: 100%;
+	text-align: left;
+	padding: 8px 16px;
+}

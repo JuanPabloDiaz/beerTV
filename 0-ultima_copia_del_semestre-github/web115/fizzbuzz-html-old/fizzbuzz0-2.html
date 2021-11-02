@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8" />
+	<title>JuanDiaz-FizzBuzz_0- Second Part</title>
+	<link href="styles/buzz.css" rel="stylesheet" >
+	
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine"></head>
+<body>
+	<header>
+		<h2 id="fullnameIN"></h2>
+		<h1>    Fizz Buzz 0 -Second Part		</h1>
+	</header>
+	<main>
+<script>
+		function namebutton() {
+			var fullname = document.getElementById("firstname").value;
+			document.getElementById("first_name").innerHTML = "Welcome to VA Hosting, " + fullname + "!";
+		}
+		function namebutton2() {
+			var first = document.getElementById("firstname").value;
+			document.getElementById("second_name").innerHTML = "How high should we count, " + first + "?";
+		}
+		function howhighbutton() {
+			var height = document.getElementById("howhigh").value;
+			document.getElementById("how_high").innerHTML = "We will count " + height + " times.";
+		}
+		function valentinehosting() {
+			var i;
+			var height = document.getElementById("howhigh").value;
+			for (i = 1; i <= height; i++) {
+				if (i % 2 === 0) {
+					document.getElementById("evenoddlist").innerHTML += i + ". Valentine Hosting - EVEN <br>";
+				} 
+    
+				else {
+					document.getElementById("evenoddlist").innerHTML += i + ". Valentine Hosting - ODD <br>";
+				}
+			}
+		}
+	</script>
+
+	<header style="text-align: center;">
+		<h1 id="first_name">header</h1>
+	</header>
+	<main>
+		<p>
+			<input type="text" name="firstname" id="firstname" placeholder="Enter Name...">
+			<br>
+			<input type="button" value="submit" onclick="namebutton(),namebutton2()">
+		</p>
+		<p id="second_name">How high should we count?</p>
+		<p>
+			<input type="text" name="howhigh" id="howhigh" placeholder="Insert Number...">
+			<br>
+			<input type="button" value="submit" onclick="howhighbutton()">
+		</p>
+		<p id="how_high">We will count 0 times.</p>
+		<p><button onclick="valentinehosting()">Print the lines!</button></p>
+		<p id="evenoddlist"></p>
+	
+		<!--**************for loops*********************-->
+<!--	<h3>ChapterEighteen(18)...</h3>
+		<p><b><i>Statement:</i></b><br>
+			var ch18question = ""; var i; for (i = 0; i &lsaquo; 5; i++) { ch18question += "The number is " + i + "\n"; }	document.getElementById("loop").innerHTML = ch18question;	}
+		</p>
+		<p id="loop"></p>
+		
+		<input type="button" class="button" onclick="clickAlert18()" value="CH 18" title="Click me to run">
+	<script>
+-->
+		<!-- Chapter(18) -->
+<!--		function clickAlert18() {
+		var ch18question = "";
+		var i;
+		for (i = 0; i < 5; i++) {
+				ch18question += "The number is " + i + "<br>";
+		}
+		document.getElementById("loop").innerHTML = ch18question;
+		}
+	</script>
+***********************************************************************************
+-->
+    <script>
+		function namebutton() {
+			var one = document.getElementById("firstName").value;
+			var two = document.getElementById("middleInitial").value;
+			var three = document.getElementById("lastName").value;
+			document.getElementById("fullnameIN").innerHTML = "Welcome to VictoriaRodriguez&reg; " + one + " " + two + " " + three + "!<br> You are now a prime member";
+		}
+		function valentinehosting() {
+			var print = "";
+			var i;
+			for (i = 1; i < 101; i++) {
+				print += i + ") Victoria Rodriguez&reg; <br>";
+			}
+			document.getElementById("vhlist").innerHTML = print;
+		}
+	</script>
+		
+		<label>Full Name*</label><br>
+		<p>
+			<input id="firstName" type="text" name="firstName" placeholder="Enter First Name">
+			<br>
+			<input id="middleInitial" type="text" name="middleInitial" placeholder="Enter Middle Initial">
+			<br>
+			<input id="lastName" type="text" name="lastName" placeholder="Enter Last Name">
+			<br>
+			<input class="button" type="button" value="submit" onclick="namebutton()">
+		</p>
+		<p>
+			<button onclick="valentinehosting()" class="button">Get crazy: Display 100 copies</button>
+		</p>
+		<p id="vhlist"></p>
+		
+
+		<hr>
+		<!-------------------------------------- loop section ------------------------------------->
+<!--		<script>
+			function brandLoopexercise() {
+			var dr = "";
+			var i;
+			for (i = 1; i < whatNum; i++){
+					dr += i + "follow us on facebook at...";
+			}
+		</script>
+		
+		<h2>Part 2</h2>
+		
+			<ul>
+				<li>
+					<button class="button2" onclick="brandLoopexercise()"> Brand Loop...</button>
+				</li>
+			</ul>
+			
+			<br>
+			
+			<p id="ngLoop"></p>
+			
+		    	<!-------------------------------------- loop section ------------------------------------->
+<!-- <hr>
+	-->	<!-------------------------------------- loop section ------------------------------------->	
+		<!--				*********************************************
+			
+<h2>This part doesnt work</h2>
+
+        	<h2>Welcome to Victoria Rodriguez!</h2>
+			<p id="description">Please fill out the next form to become a prime member :</p>
+			
+		<form id="allName">
+		<div id="div_first_name">
+			<label>First Name...</label><br>
+					<input name="firstName" type="text" placeholder="Enter first name *" size="10"><br>
+</div>
+		<div id="div_middle_name">
+			<label>Middle Initial...</label><br>
+					<input name="middleName" type="text" placeholder="Enter first name *" size="10"><br>
+</div>
+		<div >
+			<label>Last Name...</label><br>
+					<input name="lastName" type="text" placeholder="Enter first name *" size="10"><br>
+</div>
+
+		</form>
+		
+				<button onclick="outputfullname()">Submit</button>
+			
+		<script>
+			function outputfullname() {
+
+								/*	middle Initial	*/
+				var getfn, usefn, firstName;
+
+				getfn = document.getElementById("div_first_name");
+				usefn = getfn.elements["firstName"].value;
+
+				//alert("Hello " + usefn);
+				///////////////////////////////////////////////////////////
+								/*	middle Initial	*/
+				var getmi, usemi, middleName;
+
+				getmi = document.getElementById("div_middle_name");
+				usemi = getmi.elements["middleName"].value;
+
+				//alert("Hello " + usemi);
+				///////////////////////////////////////////////////////////
+								/*	Last Name	*/
+
+				var getln, useln, lastName;
+
+				getln = document.getElementById("div_last_name");
+				useln = getln.elements["lastName"].value;
+
+				//alert("Hello " + useln);
+				///////////////////////////////////////////////////////////
+				
+				var fullName = usefn + " " + usemi + ". " + useln;
+				alert(fullName);
+			}
+		
+		</script>
+		<p>the form works with a single item  but I am not able to make it work with middle name, last name...it looks like I will need to do 3 separate forms or call the values and save them in another variable called fullname</p>
+		<p>Check this video <a href="https://www.youtube.com/watch?v=a0qDV0Nivfw">tutorial here</a>.</p>
+			-->
+	</main>
+	
+	<footer style="margin: 2em auto 0 auto;">
+		<p> Designed by Juan Diaz &copy;2018</p>
+		<br />	 
+
+		<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.cpcc.edu%2F~dpatel35%2Fweb110%2Ftemplate.html">
+			<img src="http://students.cpcc.edu/~dpatel35/web110/images/html_validation_button.gif" alt="validate html" />
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fstudents.cpcc.edu%2F~dpatel35%2Fweb110%2Ftemplate.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" >
+			<img src="http://students.cpcc.edu/~dpatel35/web110/images/validation_button_css.png" alt="validate CSS" />
+		</a>
+		<br />		<br />
+	</footer>	 
+</body>	 
+</html>

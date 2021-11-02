@@ -1,0 +1,242 @@
+/*    CSS code */
+.backg {
+   	background: url(../../web120/images/mar.jpg) no-repeat bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;			/*	to center image verticaly	*/
+	background-size: cover;
+	background-position: center; 			/*	to center image verticaly	*/
+    color: #ffd900;
+	font-family: 'Marck Script', cursive;		/* font for nav and everything but the main*/
+}
+.rectangle, #TOC {
+    font-family: 'Courgette', cursive;
+    background-color: rgba(86, 16, 91, 0.82);
+    margin: 0px auto;
+    max-width: 800px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: black;
+	text-align: center;
+	text-shadow: .2px .5px .1px red, 
+                .3px .3px 5px red;
+}
+#TOC {
+	text-align: center;
+}
+ #TOC ul, li {
+  list-style: none;
+}
+.folder {
+	border-bottom-style: dashed;
+  border-width: 3px;
+  border-color: dimgray;
+}
+hr {
+    margin: auto;
+    width: 40%;
+}
+/*--------------------------------------*/
+body{
+  font-family: "Indie Flower";
+	font-size:15px;
+	line-height:1.6em;
+	background-color:#f4f4f4;
+	color:#8cff00;
+	margin:0;
+}
+
+/*	Global	- it helps with margins and display everything ok*/
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+/* template web110 */
+/* everything in the header is the first and uper box */
+	header{
+		background-color: ivory;	/*white*/
+		color: black;
+	}
+	header h1{	/* website name go rigth */
+		float: left;
+		font-size: 50px;
+		padding-left: 5px;
+	}
+	header .logo{ /* website Logo go rigth */
+		width: 15%;		/* resize */
+		float: left;
+	}
+	header ul{
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	header li{	/* social media go left */
+		float: right;
+		display: inline;
+		padding: 0px 10px 0px 10px;
+	}
+
+	header .socialMedia a{
+		font-size: 35px;	/*icons size*/
+	}
+
+	/***************************/
+	/* to fix botom setting footer */
+	 footer {
+	text-align: center;
+	background-color: #330000;		/*red*/
+	padding:5px;
+	padding-left:100px;
+}
+#validate a {
+	text-decoration:none;
+}
+#socialmenu li {
+	display: inline;
+    padding: 3px;
+}
+
+	/*********************************************************/
+/*	social media	To edit the social menu*/
+.fa {
+  padding: 8px;
+  width: 40px;
+ /* height: 40px;	*/
+  font-size: 20px;
+  text-align: center;
+/*vertical-align: middle;	doesnt not center text vertically*/
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;			/*create a circul*/
+  color: white;					/*text color*/
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+}
+.fa-instagram {
+  background: #125688;
+}
+.fa-linkedin {
+  background: #007bb5;
+}
+.fa-github {
+  background: white;
+  color:black;
+}
+.fa-codepen {
+  background: #211f1b; /*black*/
+}
+.fa-expeditedssl {		/* MyWebspace	*/
+  background:   #cc9900; /*orange*/
+}
+.fa-code {
+  background: #734d26; /*brown*/
+}
+.fa-leaf {
+  background: #008000;	/*green*/
+}
+/*********************************************************/
+
+/* navbar is second box */
+	#navbar{		/* main NavBar website - left */
+		background-color:#333;
+		color:#fff;
+	/*	opacity: 0.7;		*/
+	}
+
+	#navbar ul{
+		padding:0;
+		list-style: none;
+	}
+
+	#navbar li{
+		display:inline;		/*no underline link*/
+	}
+
+	#navbar a{
+		color:#fff; /* white */
+		text-decoration: none;
+		font-size:18px;
+		padding-right:15px;
+	}
+
+	#navbar .current a{		/* highlight current tag */
+		color: orange;
+		font-weight: bold;
+	}
+
+	#navbar a:hover{	/* highlight when mouse is under*/
+		color: #cccccc;
+	}
+
+/* third box - background-image */
+	#bgimg{
+		background-image:url('../../sharedfiles/background/color/showcase.jpg');		background-position:center right;
+		min-height:300px;
+		margin-bottom:30px;
+		text-align: center;
+		vertical-align: text-bottom;
+	}
+	#bgimg h1{		/*	welcome text or promotional	*/
+		color:#fff;
+		font-size:50px;
+		line-height: 1.6em;
+		padding-top:50px;		/*ideal to use 		vertical-align: middle;	- doesnt work */
+	}
+	.imgtest{
+		width:150px;
+		float: right;
+	}
+#main{
+	float:left;
+	width:70%;
+	padding:0 30px;
+	box-sizing: border-box;
+}
+#sidebar{
+	float:right;
+	width:30%;
+	background: #333;
+	color:#fff;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+footer{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top:40px;
+}
+
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}
+
+iframe{
+		float:right;
+		border: 0;
+}
+a {
+    color: navajowhite;
+    text-decoration: none;
+}
+a:hover{
+    color: slategray;
+    text-decoration: none;
+}

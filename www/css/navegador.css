@@ -1,0 +1,65 @@
+/*    tipo de texto, margenes y general    */
+body{
+  background: lightblue url('bogota_skyline.jpg') no-repeat fixed center; 
+  background-size: cover;
+  font-family: Courier New;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+
+/*   logo y nombre en la izquierda     */
+nav div a img{
+ height: 70px;
+ width: 140px;
+ float: left;
+}
+
+
+/*  ------------------      */
+ /* Dropdown Button */
+.dropbtn {
+    background-color: aqua;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) - menu opciones producto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: deepskyblue}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: cyan;
+} 

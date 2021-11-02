@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8" />
+	<title>JuanDiaz-FizzBuzz_0 - part 2</title>
+	<link href="styles/buzz.css" rel="stylesheet" >
+</head>
+<body>
+	<header>
+		<h1>FizzBuzz_0 - part 2</h1>
+	</header>
+	<main>
+		<h2 id="welcome">Hi there, <br>
+		Please enter your Full Name below:</h2>
+			doesnt work...
+		<form id="full_name">
+			<label>Full Name...</label><br>
+					<input name="fullName" type="text" placeholder="Enter full name *" size="10"><br>
+		</form>
+		
+				<button onclick="outputfullname()">Submit</button>
+			
+			<script>
+					function outputfullname() {
+
+					var getfn, usefn, fullName, welcome;
+
+				getfn = document.getElementById("full_name");
+				usefn = getfn.elements["fullName"].value;
+			document.getElementById("welcome").innerHTML = "Hello " + getfn + "! <br> Welcome to Victoria Rodriguez!!";
+
+			}
+		
+	</script>
+		
+		<hr>
+		<!-------------------------------------- section ------------------------------------->
+		
+	</main>
+	
+	<footer style="margin: 2em auto 0 auto;">
+		<p> Designed by Juan Diaz &copy;2018</p>
+		<br />	 
+
+		<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.cpcc.edu%2F~dpatel35%2Fweb110%2Ftemplate.html">
+			<img src="http://students.cpcc.edu/~dpatel35/web110/images/html_validation_button.gif" alt="validate html" />
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fstudents.cpcc.edu%2F~dpatel35%2Fweb110%2Ftemplate.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" >
+			<img src="http://students.cpcc.edu/~dpatel35/web110/images/validation_button_css.png" alt="validate CSS" />
+		</a>
+		<br />		<br />
+	</footer>	 
+</body>	 
+</html>

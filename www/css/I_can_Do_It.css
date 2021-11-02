@@ -1,0 +1,109 @@
+body{
+  font-family: sans-serif;
+  background-color: #8ddbf3;
+}
+
+h1{
+  text-align: center;
+  color: slate;
+  margin: 30px o 50px;  
+}
+.Inventario_Mayo{
+  margin: 10px 50px;
+ 
+}
+.Inventario_Mayo img{
+  cursor: pointer;
+  width: 230px;
+  padding: 5px;
+  filter: grayscale 100%;
+  max-width: 550px;
+  transition:.3s;
+}
+.Inventario_Mayo img:hover{
+  filter: grayscale(0);
+	transform: scale(1.1);
+
+}
+
+nav {
+  background-color: #555555;
+  text-align: center;
+}
+    iframe
+{
+	background-color: #EEE9E8;
+}
+ 
+
+
+  /*	edit fotos filter by website
+*/
+*{
+  margin:0;
+  padding:0;
+}
+.cont {
+  margin:45px auto;
+  max-width:100%;
+  width:10000px;
+
+}
+
+.cont img {
+  cursor:pointer;
+  padding:0;
+  margin:0;
+  width:32%;
+  max-width:550px;
+  object-fit:cover;
+  transition:.3s;
+ 
+}
+.cont img:hover {
+ opacity:.5;
+}
+
+.galeria{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.modal {
+  position:fixed;
+  background:rgba(0,0,0,.8);
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+ 
+}
+
+.modal_img{
+  width:90%;
+  max-width:450px;
+}
+
+.mod_cerrar{
+  font-size:20px;
+  font-family:sans-serif;
+  border:2px solid white;
+  padding:20px;
+  color:white;
+  margin-top:20px;
+  cursor:pointer;
+  transition:.3s;
+}
+.mod_cerrar:hover {
+  background:white;
+  color: black;
+}
+
+
+

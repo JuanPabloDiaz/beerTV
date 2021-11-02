@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8" />
+	<title>JuanDiaz-FizzBuzz_0 - part 2</title>
+	<link href="styles/buzz.css" rel="stylesheet" >
+	
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine"></head>
+<body>
+	<header>
+		<h1>Fizz Buzz 1</h1>
+	</header>
+	<main>
+		<!-------------------------------------- Greeting h2 ------------------------------------->
+		<h2 id="changeGreeting">
+          Hi there, <br>
+		  Please enter your Full Name below:
+        </h2>
+		<!-------------------------------------- Form ------------------------------------->
+		<form id="fullNameForm">
+            <label>Full Name...</label><br>        <!--doesnt need to be in <label>-->
+                <input name="name" type="text" placeholder="Enter name (Juan Pab...)" size="15">
+        </form>
+        
+        <button onclick="outputfullname()" class="button">Submit</button>
+		<!-------------------------------------- Function to change the title------------------------------------->
+    <script>
+
+        function outputfullname() {
+
+            var getfn,usefn,name;                                                                               <!--Declar variables-->
+            getfn=document.getElementById("fullNameForm") ;                                                     <!--save input in variable-->
+            usefn = getfn.elements["name"].value;                                           <!--get input from the variable to use by saving in another variable-->
+            document.getElementById("changeGreeting").innerHTML = "Hello "+ usefn + ", <br>Welcome to Victoria Rodriguez!!<br>";                       <!--change title -->
+
+            document.getElementById("looptitle").innerHTML = "Hey " + usefn + ", Let's experiment! Click on the loop botton below...";
+
+        }
+
+    </script>
+        <!-------------------------------------- part 2 ------------------------------------->
+		<hr>
+		<!-------------------------------------- section ------------------------------------->
+    <script>
+        
+	   function numLoop() {
+           var i;
+           for (i = 1; i <= 141; i++) {
+				if (i % 3 === 0 && i % 5 === 0) {
+					document.getElementById("Juan(one)List").innerHTML += "(" + i + ") CodeCademy. ";
+				} else if (i % 5 === 0) {
+					document.getElementById("Juan(one)List").innerHTML += "(" + i + ") FreeCodeCamp. ";
+				} else if (i % 3 === 0){
+					document.getElementById("Juan(one)List").innerHTML += "(" + i + ") Codepen. ";
+				} else {
+					document.getElementById("Juan(one)List").innerHTML += "(" + i + ") Udemy. ";
+				}
+			}
+		}
+        
+</script>
+	    <p id="looptitle"></p><br>
+		<button onclick="numLoop()" class="button">Get crazy: Display 140 copies</button>
+
+		<div id="Juan(one)List"><br></div>
+	</main>	
+	<footer style="margin: 2em auto 0 auto;">
+		<p> Designed by Juan Diaz &copy;2018</p>
+		<br />	 
+
+		<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.cpcc.edu%2F~dpatel35%2Fweb110%2Ftemplate.html">
+			<img src="http://students.cpcc.edu/~dpatel35/web110/images/html_validation_button.gif" alt="validate html" />
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fstudents.cpcc.edu%2F~dpatel35%2Fweb110%2Ftemplate.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" >
+			<img src="http://students.cpcc.edu/~dpatel35/web110/images/validation_button_css.png" alt="validate CSS" />
+		</a>
+		<br />		<br />
+	</footer>	 
+</body>	 
+</html>

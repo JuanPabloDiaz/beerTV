@@ -1,0 +1,44 @@
+/* CSS Document */
+
+body {
+	background-color: #F5F5F5; /*whitesmoke*/
+  color: MidnightBlue;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-indent: 10px;   
+}
+a { 
+  text-decoration: none;
+  color: LightSteelBlue;
+	font-size: 18px;
+  font-weight: bold;
+    
+}
+h1 {
+	background-color: black;
+	color: white;		
+	text-shadow: 3px 3px 5px gray;
+	line-height: 200%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 54px;
+}
+main {
+  margin-left: 100px;
+	margin-right: 100px;
+	color: DarkGoldenRod;
+}		
+p, #tagline {
+	color: DarkSlateGray;
+}
+img {
+	margin-left: 25%;
+}
+footer img {
+	margin-left: 0;
+}
+footer { 
+	text-align: center;
+  font-style: italic;
+	font-size: 14px; 
+}

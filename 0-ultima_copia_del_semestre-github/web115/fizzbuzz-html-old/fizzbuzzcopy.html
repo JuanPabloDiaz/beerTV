@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+	<link href="styles/buzz.css" rel="stylesheet" >
+	
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+	<script>
+	function chickName() {
+		var completename = document.getElementById("fullName").value;
+			document.getElementById("greeting").innerHTML = "Hello, " + completename + "! <br> Welcome to Victoria Rodriguez!!";
+			document.getElementById("ngLoop2").innerHTML = "Hey " + completename + "! Enter a number and we find you the answer as even or odd.";
+		}
+
+	function generateNum() {
+		var whatNum = document.getElementById("userEnterNum").value;
+		var whatNum = parseInt(whatNum);
+		for (var i = 1; i <= whatNum; i++) {
+			if (i % 2 === 0) {
+				document.getElementById("evenOddList").innerHTML += i + ". Victoria RodriguezEEEE <br>";
+			} 
+    
+			else {
+				document.getElementById("evenOddList").innerHTML += i + ". Victoria RodriguezOOO <br>";
+			}
+		}
+	}
+	</script>
+	
+</head>
+
+<body>
+
+<div id="wrapper">	
+	
+	<br>
+	<br>
+	<header>
+	    <h2 id="greeting">Hi there, <br>
+		Please enter your Full Name below:</h2>
+	</header>	
+		<br>
+
+		<h3>Assignment: Fizz Buzz 0 - Part 2</h3>
+		
+	<br>
+	
+		<form>
+			<label for="fullName">Full Name:</label>
+			<br>
+			<input type="text" id="fullName" placeholder="Enter Full Name...">
+			<br>
+						<input type="button" class="button" value="Submit" onclick="chickName()">
+		</form>
+			
+			<br><hr>
+			<!-- second part-->
+		<form>
+			<label id="ngLoop2"></label>
+			<br>
+			<br>
+			<input type="text" id="userEnterNum" placeholder="Type any number...">
+			<br>
+			<br>
+			<input type="button" class="button" value="Submit" onclick="generateNum()">
+		</form>	
+		
+		<br>
+		
+	<footer style="margin: 2em auto 0 auto;">
+		<p> Designed by Juan Diaz &copy;2018</p>
+		<br />	 
+
+		<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.cpcc.edu%2F~dpatel35%2Fweb110%2Ftemplate.html">
+			<img src="http://students.cpcc.edu/~dpatel35/web110/images/html_validation_button.gif" alt="validate html" />
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fstudents.cpcc.edu%2F~dpatel35%2Fweb110%2Ftemplate.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" >
+			<img src="http://students.cpcc.edu/~dpatel35/web110/images/validation_button_css.png" alt="validate CSS" />
+		</a>
+		<br />		<br />
+	</footer>	 
+</body>	 
+</html>

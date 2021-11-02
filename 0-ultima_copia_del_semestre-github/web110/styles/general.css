@@ -1,0 +1,108 @@
+/*	CSS	*/
+body {
+	background-color: GoldenRod;
+	font-family: 'Courgette' , cursive ; 
+	margin-left: 100px;
+	margin-right: 100px;
+}
+body.m4 {
+	background-color: #347C17;
+	font-size: large;
+	font-family: "Courier New", Courier; 
+}
+p {
+	text-indent: 60px;
+	color: #FFF8C6;
+	font-family: "Courier New", Courier; 
+	background-color: #347C17;
+}
+p.hob {
+	text-align: justify;
+	text-indent: 60px;
+	background-color: GoldenRod;
+	
+}
+p.source {
+	text-indent: 50px;
+}
+ul.fore {
+	list-style-type: square ;
+	text-align : justify ;
+	line-height : 2.5;
+}
+ul.core {
+	list-style-type: circle ;
+	list-style-position : inside ;
+	text-indent : 50px;
+	line-height : 2 ;
+}
+article {
+	font-family: "Courier New", Courier; 
+	color: #130f02; 
+	background-color: GoldenRod;
+	font-size: large;
+	line-height : 2 ;
+}
+ul {
+	line-height : 2 ;
+	
+}
+ul.a {
+	list-style-type: upper-roman; 
+	text-align : justify ;
+	list-style-position: inside; 
+	font-family: "Courier New", Courier; 
+	color: #130f02; 
+	background-color: #347C17;
+}
+img.other {
+	float: right;
+}
+img.first {
+	float: left;
+}
+ul.b {
+	list-style-type: lower-alpha; 
+	list-style-position: inside ;
+	text-indent: 50px;
+	color: #FFF8C6;
+	font-family: "Courier New", Courier; 
+	background-color: #347C17;
+}
+div {
+	color: #FFF8C6; 
+	text-indent: 60px; 
+	font-family: "Courier New", Courier, monospace;
+}
+h1 {
+	text-align : center ;
+	font-family: "Courier New", Courier;
+}
+h1.hm4 {
+	text-align: center;
+	background-color: #130f02;
+	color: #f1dead;
+	text-align: center;
+}
+h1.int {
+	text-align: center;
+	font-family: 'Courgette' , cursive ;
+}
+h3 {
+	text-align:right;
+}
+.center {
+	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+}
+figure {
+	float: initial;
+}
+footer {
+	text-align: center;
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}

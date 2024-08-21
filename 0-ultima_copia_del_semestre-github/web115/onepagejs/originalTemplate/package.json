@@ -26,8 +26,8 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.3.1",
         "bootstrap": "4.6.2",
+        "@fortawesome/fontawesome-free": "5.15.4",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1"
     },

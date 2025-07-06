@@ -19,7 +19,6 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
 
   // Determine if the source is a YouTube embed
   const isYouTube =
@@ -32,45 +31,26 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         ([entry]) => {
           setIsIntersecting(entry.isIntersecting);
         },
-        {
+        { 
           threshold: 0.1,
-          rootMargin: "50px",
+          rootMargin: "50px"
         }
       );
-
+      
       observer.observe(videoRef.current);
-
+      
       return () => observer.disconnect();
     }
   }, [isYouTube]);
 
   useEffect(() => {
-    if (videoRef.current && !isYouTube && isIntersecting) {
+    if (videoRef.current && !isYouTube && isIntersecting && autoplay) {
       const video = videoRef.current;
-
-      if (autoplay && !hasPlayedOnce) {
-        // Only attempt autoplay once when the video becomes visible
-        video.play().catch((error) => {
-          // Autoplay might be blocked by browser policies
-          console.warn("Autoplay failed:", error);
-        });
-        setHasPlayedOnce(true);
-      } else if (!autoplay) {
-        video.pause();
-      }
+      video.play().catch((error) => {
+        console.warn("Autoplay failed:", error);
+      });
     }
-  }, [autoplay, isYouTube, isIntersecting, hasPlayedOnce]);
-
-  // Clean up video when component unmounts or goes out of view
-  useEffect(() => {
-    const video = videoRef.current;
-    return () => {
-      if (video) {
-        video.pause();
-        video.currentTime = 0;
-      }
-    };
-  }, []);
+  }, [autoplay, isYouTube, isIntersecting]);
 
   return (
     <div className={`video-container relative w-full ${className}`}>
@@ -88,18 +68,14 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
       ) : (
         <video
           ref={videoRef}
-          src={isIntersecting ? videoUrl : undefined} // Only load video when visible
+          src={videoUrl}
           controls={!autoplay}
           muted={muted}
           loop={autoplay}
           playsInline
-          preload={isIntersecting ? "metadata" : "none"} // Lazy load video metadata
+          preload="metadata"
           className="w-full rounded-lg shadow-lg"
           title={title || "Beer TV Commercial"}
-          onLoadedData={() => {
-            // Reset the hasPlayedOnce flag when video data is loaded
-            setHasPlayedOnce(false);
-          }}
         >
           Your browser does not support the video tag.
         </video>

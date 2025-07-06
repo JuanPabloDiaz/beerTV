@@ -9,12 +9,19 @@ function getAds() {
   const data = JSON.parse(fileContents);
 
   // Add IDs and years to each ad
-  return data.map((ad, index) => ({
-    ...ad,
-    id: `ad-${index + 1}`,
-    year: extractYearFromVideo(ad.video_link) || "2023", // Default year if can't extract
-    featured: index < 5, // Mark first 5 as featured for demo
-  }));
+  return data.map((ad, index) => {
+    // Create a unique ID based on video URL and brand name to ensure uniqueness
+    const videoId = ad.video_link.split('/').pop()?.split('.')[0] || `video-${index}`;
+    const brandSlug = ad.brand_name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    const uniqueId = `${brandSlug}-${videoId}-${index}`;
+    
+    return {
+      ...ad,
+      id: uniqueId,
+      year: extractYearFromVideo(ad.video_link) || "2023", // Default year if can't extract
+      featured: index < 5, // Mark first 5 as featured for demo
+    };
+  });
 }
 
 // Helper function to extract year from video URL or use default

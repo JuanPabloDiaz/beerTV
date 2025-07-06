@@ -7,7 +7,36 @@ import AdDetailClient from "./ad-detail-client";
 function getAds() {
   const filePath = path.join(process.cwd(), "data", "Beer-Tv-Ads.json");
   const fileContents = fs.readFileSync(filePath, "utf8");
-  return JSON.parse(fileContents);
+  const data = JSON.parse(fileContents);
+  
+  // Add IDs and years to each ad (same logic as API)
+  return data.map((ad, index) => ({
+    ...ad,
+    id: `ad-${index + 1}`,
+    year: extractYearFromVideo(ad.video_link) || "2023",
+    featured: index < 5
+  }));
+}
+
+// Helper function to extract year from video URL or use default
+function extractYearFromVideo(videoUrl) {
+  // Try to extract year from URL patterns if available
+  const yearMatch = videoUrl.match(/\/(20\d{2})\//);
+  if (yearMatch) {
+    return yearMatch[1];
+  }
+  
+  // Try another pattern
+  const yearMatch2 = videoUrl.match(/_(20\d{2})_/);
+  if (yearMatch2) {
+    return yearMatch2[1];
+  }
+  
+  // For cloudfront URLs, we'll use a range of years for variety
+  const hash = videoUrl.split('/').pop()?.split('.')[0] || '';
+  const hashNum = hash.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  const yearOffset = hashNum % 10; // 0-9
+  return String(2014 + yearOffset); // Years 2014-2023
 }
 
 // This function is called during build to generate static pages for each ad

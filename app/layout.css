@@ -1,0 +1,171 @@
+/* Cinematic Super Bowl Theme Styles */
+.page-background {
+  background-color: #0a0a0a;
+  background-image:
+    linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #374151 50%, #1e293b 75%, #0f172a 100%),
+    radial-gradient(circle at 20% 80%, rgba(234, 179, 8, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(234, 179, 8, 0.1) 0%, transparent 50%);
+  background-size: 400% 400%, 100% 100%, 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%, center, center; }
+  50% { background-position: 100% 50%, center, center; }
+}
+
+.glass-card {
+  background: rgba(20, 20, 25, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.spotlight {
+  position: relative;
+}
+
+.spotlight::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 204, 0, 0.15) 0%,
+    rgba(255, 204, 0, 0) 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+  animation: movespotlight 8s infinite alternate ease-in-out;
+}
+
+@keyframes movespotlight {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(400px, 200px);
+  }
+}
+
+.hero-gradient {
+  position: relative;
+}
+
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(10, 10, 10, 0.5) 50%,
+    rgba(10, 10, 10, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.video-hover-card:hover .video-title {
+  transform: translateY(-10px);
+  color: #fcd34d;
+}
+
+.video-hover-card:hover .video-brand-logo {
+  transform: scale(1.1);
+}
+
+.video-brand-logo {
+  transition: transform 0.3s ease-out;
+}
+
+.video-title {
+  transition: all 0.3s ease-out;
+}
+
+/* Random button effect */
+.dice-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.dice-button::before {
+  content: "🎲";
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.dice-button:hover::before {
+  left: 12px;
+  opacity: 1;
+}
+
+.dice-button:hover .dice-text {
+  transform: translateX(12px);
+}
+
+.dice-text {
+  transition: transform 0.3s ease;
+}
+
+/* Cinema reel effect */
+.cinema-border {
+  position: relative;
+  border-left: 10px solid rgba(0, 0, 0, 0.8);
+  border-right: 10px solid rgba(0, 0, 0, 0.8);
+}
+
+.cinema-border::before,
+.cinema-border::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  height: 20px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9) 0px,
+    rgba(0, 0, 0, 0.9) 12px,
+    rgba(255, 215, 0, 0.3) 12px,
+    rgba(255, 215, 0, 0.3) 24px
+  );
+}
+
+.cinema-border::before {
+  top: 0;
+}
+
+.cinema-border::after {
+  bottom: 0;
+}
+
+/* Video player enhancements */
+.featured-player {
+  box-shadow: 0 10px 50px rgba(255, 215, 0, 0.2);
+}
+
+/* Animated grid items */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid-item-animation {
+  animation: fadeInUp 0.5s ease-out forwards;
+}

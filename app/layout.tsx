@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Bebas_Neue } from "next/font/google";
+import { Inter, Bebas_Neue, Teko } from "next/font/google";
 import "./globals.css";
+import "./layout.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -13,6 +14,13 @@ const inter = Inter({
 const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
   weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const teko = Teko({
+  variable: "--font-teko",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -37,12 +45,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${bebasNeue.variable} bg-gray-950 text-white antialiased min-h-screen flex flex-col`}
+        className={`${inter.variable} ${bebasNeue.variable} ${teko.variable} page-background text-white antialiased min-h-screen flex flex-col`}
       >
+        <div className="spotlight"></div>
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow relative z-10">{children}</main>
         <Footer />
       </body>
     </html>

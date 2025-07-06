@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"app/**/*.ts\" \"app/**/*.tsx\" \"components/**/*.ts\" \"components/**/*.tsx\" \"app/**/*.css\"",
-    "format-check": "prettier --check \"app/**/*.ts\" \"app/**/*.tsx\" \"components/**/*.ts\" \"components/**/*.tsx\" \"app/**/*.css\"",
+    "format": "prettier --write \"app/**/*.js\" \"app/**/*.jsx\" \"app/**/*.ts\" \"app/**/*.tsx\" \"components/**/*.js\" \"components/**/*.jsx\" \"components/**/*.ts\" \"components/**/*.tsx\" \"app/**/*.css\"",
+    "format-check": "prettier --check \"app/**/*.js\" \"app/**/*.jsx\" \"app/**/*.ts\" \"app/**/*.tsx\" \"components/**/*.js\" \"components/**/*.jsx\" \"components/**/*.ts\" \"components/**/*.tsx\" \"app/**/*.css\"",
     "clean": "rm -rf .next node_modules dist package-lock.json && npm install"
   },
   "dependencies": {

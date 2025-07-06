@@ -1,25 +1,93 @@
-# 💚 Bienvenidos al fascinante mundo de MLOps 💚
+# 🍺 Beer TV - Super Bowl Commercial Experience
 
-[Platzi](https://github.com/platzi/Mlops-platzi)
+A full-stack Next.js application that showcases iconic beer commercials with a Super Bowl aesthetic. This application allows users to browse and watch beer commercials from various brands.
 
-Este repositorio del curso de [MLOps: Despliegue de Modelos de Machine Learning](https://platzi.com/cursos/mlops) está diseñado para guiarte en el emocionante camino hacia la maestría en MLOps. Aquí, aprenderás todo lo necesario para convertirte en un verdadero experto en el tema.
+## 🧠 Features
 
-Me emociona infinitamente que seas parte de este viaje y espero que este material aporte signiticativamente a tu crecimiento profesional.
+- **Bold, cinematic UI** styled like a Super Bowl beer ad experience
+- **Featured commercial** highlighted at the top of the homepage
+- **Filter by brand** to find commercials from your favorite beer brands
+- **Responsive design** works on mobile, tablet, and desktop
+- **Video-first layout** optimized for watching beer commercials
+- **API endpoints** for accessing beer commercial data
 
-Para nuestras configuraciones utilizaremos `poetry`, un gestor que nos permitirá tener paquetes en ambientes de test o producción, además de la ventaja de poder trabajar con diferentes versiones de Python.
+## 🧱 Tech Stack
 
-Hablando de Python, te sugiero utilizar `pyenv` para gestionar sus versiones, es muy sencillo de usar y te facilitará la vida. No obstante, si ya tienes tu gestor favorito, no hay problema, lo esencial es que te sientas cómodo.
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Database**: Local JSON file (data/Beer-Tv-Ads.json)
+- **Backend**: Next.js API Routes
 
-En el transcurso de este curso, daremos un recorrido desde los conceptos básicos de MLOps hasta la puesta en producción de un modelo de Machine Learning. En el camino aprenderemos a usar diferentes herramientas y a configurar ambientes de desarrollo óptimos.
+## 📋 Getting Started
 
-Este repositorio tiene dos ramas principales: `master` y `deploy_prod`. En `master` abordaremos los temas de tracking y orquestación; mientras que en `deploy_prod` encontrarás todo lo relacionado con el despliegue de un modelo de Machine Learning en producción.
+### Prerequisites
 
-**🔒Importante🔒**: Los datos generados son sensibles, así que guardémoslos de manera segura. Te recomiendo usar un bucket de S3 o algún otro lugar seguro. Así aseguramos que nuestros repositorios solo contengan lo necesario y mantenemos nuestras bases de datos en un lugar seguro y gestionado. Para todo lo relacionado a la nube, recuerda que tienes el archivo de configuración a tu disposición.
+- Node.js 18.0.0 or later
+- npm or yarn
 
-Te invito a que añadas todo lo que ya sabes del Machine Learning, haz modelos increíbles; no olvides hacer validación de hiperparámetros, los tests necesarios para reconocer cuando te enfrentas con underfitting u overfitting, y tomar acciones de si disminuyes dimensionalidad de tus datos, aumentas la data, haces features engineering, etc. En los temas que ya vimos, te recomiendo que pongas en práctica todo lo que aprendiste, y para hacer más profesionales tus flujos, atrévete a desarrollar workflows, agendarlos, usar artefactos como input y output entre las tasks. Y añadas toda la lógica que necesitas si requieres de triggers o notificaciones.
+### Installation
 
-Si enfrentas problemas de cómputo, no olvides que puedes usar los recursos de la nube, puedes hacer paralelismo con Dask, usar un cluster de Spark, usar multiprocessing, etc. Y si necesitas más procesamiento, en tu arquitectura no olvides procesar por chunks o mejorar las estrategias de procesamiento.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/beertv.git
+   cd beertv
+   ```
 
-Si en algún momento tienes dudas o necesitas ayuda, ¡no dudes en escribirme! Estoy aquí para ayudarte y recuerda que tus compañeros también pueden ser una gran fuente de conocimiento y apoyo. ¡Disfruta el curso y mucha suerte en tu aprendizaje!
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-- Con todo cariño, Profe Cami 💙
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## 📁 Project Structure
+
+```
+/beertv
+  /app                   # Next.js App Router
+    /api                 # API Routes
+      /ads               # Beer ad API endpoints
+    /ads                 # Ad detail pages
+    page.tsx             # Homepage
+  /components            # Reusable React components
+    AdCard.tsx           # Beer commercial card
+    BrandFilter.tsx      # Brand filter component
+    Footer.tsx           # Application footer
+    Header.tsx           # Application header
+    VideoPlayer.tsx      # Video player component
+  /data                  # Data source
+    Beer-Tv-Ads.json     # Local JSON database for beer ads
+  /public                # Static assets
+```
+
+## 🛠️ API Endpoints
+
+- `GET /api/ads`: Returns all beer commercials
+- `GET /api/ads?brand=Budweiser`: Filter commercials by brand name
+- `GET /api/ads?spot_language=en`: Filter commercials by language
+- `GET /api/ads?brand_parent_name=Anheuser-Busch`: Filter commercials by parent brand
+- `GET /api/ads/[id]`: Get details for a specific commercial by ID
+
+## 🎨 Design Approach
+
+The UI is designed to evoke the bold, cinematic feel of Super Bowl beer commercials with:
+
+- Dark theme with gold accents
+- Bold typography using Bebas Neue font
+- Cinematic video layouts
+- Responsive grid design for all device sizes
+- Smooth animations and transitions
+
+## 📝 License
+
+This project is MIT licensed.

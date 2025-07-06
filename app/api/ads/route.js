@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
@@ -10,7 +10,7 @@ function getAds() {
   return data;
 }
 
-export async function GET(request: NextRequest) {
+export async function GET(request) {
   try {
     const ads = getAds();
     const { searchParams } = new URL(request.url);
@@ -23,19 +23,19 @@ export async function GET(request: NextRequest) {
     let filteredAds = ads;
 
     if (brand) {
-      filteredAds = filteredAds.filter((ad: any) =>
+      filteredAds = filteredAds.filter((ad) =>
         ad.brand_name.toLowerCase().includes(brand.toLowerCase()),
       );
     }
 
     if (language) {
       filteredAds = filteredAds.filter(
-        (ad: any) => ad.spot_language.toLowerCase() === language.toLowerCase(),
+        (ad) => ad.spot_language.toLowerCase() === language.toLowerCase(),
       );
     }
 
     if (parentBrand) {
-      filteredAds = filteredAds.filter((ad: any) =>
+      filteredAds = filteredAds.filter((ad) =>
         ad.brand_parent_name.toLowerCase().includes(parentBrand.toLowerCase()),
       );
     }

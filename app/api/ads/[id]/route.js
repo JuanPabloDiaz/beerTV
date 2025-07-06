@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
@@ -10,13 +10,10 @@ function getAds() {
   return data;
 }
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params: { id: string } },
-) {
+export async function GET(request, context) {
   try {
     const ads = getAds();
-    const ad = ads.find((ad: any) => ad.id === params.id);
+    const ad = ads.find((ad) => ad.id === context.params.id);
 
     if (!ad) {
       return NextResponse.json({ error: "Ad not found" }, { status: 404 });

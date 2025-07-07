@@ -18,6 +18,7 @@ export const VideoPlayer = ({ src, poster, className = '' }) => {
     >
       {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
       <video
+        key={src}
         src={src}
         poster={poster}
         controls

@@ -40,8 +40,8 @@ export default function HomePage() {
   }
 
   // Featured ad is first marked featured else first item
-  const featuredAd = ads.find((ad) => ad.featured) || ads[0]
-  const remainingAds = ads.filter((ad) => ad.id !== featuredAd.id)
+  const featuredAd = ads.find(ad => ad.featured) || ads[0]
+  const remainingAds = ads.filter(ad => ad.id !== featuredAd.id)
 
   return (
     <div className="bg-gradient-to-b from-black via-gray-900 to-gray-800 min-h-screen text-white pb-20">
@@ -51,7 +51,8 @@ export default function HomePage() {
           Super Bowl Beer Ads
         </h1>
         <p className="max-w-2xl text-lg md:text-xl text-gray-300 mb-10">
-          Relive the most iconic, over-the-top beer commercials to ever grace the Super Bowl stage. Grab a cold one and enjoy the show!
+          Relive the most iconic, over-the-top beer commercials to ever grace
+          the Super Bowl stage. Grab a cold one and enjoy the show!
         </p>
 
         {/* Featured video */}
@@ -68,7 +69,7 @@ export default function HomePage() {
 
       {/* Grid of all ads */}
       <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {remainingAds.map((ad) => (
+        {remainingAds.map(ad => (
           <AdCard key={ad.id} ad={ad} />
         ))}
       </Container>

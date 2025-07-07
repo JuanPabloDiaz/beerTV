@@ -13,7 +13,9 @@ export const VideoPlayer = ({ src, poster, className = '' }) => {
   if (!src) return null
 
   return (
-    <div className={`w-full aspect-video bg-black overflow-hidden rounded-lg shadow-2xl ${className}`}>
+    <div
+      className={`w-full aspect-video bg-black overflow-hidden rounded-lg shadow-2xl ${className}`}
+    >
       {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
       <video
         src={src}

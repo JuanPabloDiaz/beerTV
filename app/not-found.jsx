@@ -72,7 +72,6 @@ export default function NotFound() {
           </h3>
           <p className="text-blue-100 text-sm">
             Beer TV Ads is a web application that allows users to view and
-            
           </p>
         </div>
 

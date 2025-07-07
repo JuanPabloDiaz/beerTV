@@ -1,5 +1,3 @@
-
-
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -18,12 +16,14 @@ export default function TestPage() {
         setLoading(true)
         // Add timestamp to prevent caching
         const timestamp = new Date().getTime()
-        const response = await fetch(`/api/characters?t=${timestamp}`, { cache: 'no-store' })
-        
+        const response = await fetch(`/api/characters?t=${timestamp}`, {
+          cache: 'no-store',
+        })
+
         if (!response.ok) {
           throw new Error(`API request failed with status ${response.status}`)
         }
-        
+
         const data = await response.json()
         console.log('Fetched characters:', data)
         setCharacters(data.characters || [])
@@ -59,21 +59,21 @@ export default function TestPage() {
     <Container className="py-5">
       <h1 className="text-2xl font-bold mb-4">Simpsons Characters Test Page</h1>
       <p className="mb-4">Found {characters.length} characters</p>
-      
+
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
         {characters.map(character => (
           <div key={character.id} className="border rounded-md p-2">
             <h2 className="font-semibold mb-2">{character.name}</h2>
             <div className="overflow-hidden rounded-md mb-2">
-              <Image 
-                src={character.avatar} 
-                alt={character.name} 
+              <Image
+                src={character.avatar}
+                alt={character.name}
                 width={200}
                 height={200}
                 className="w-full h-auto"
               />
             </div>
-            <Link 
+            <Link
               href={`/characters/${character.slug}`}
               className="block text-center bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-600"
             >

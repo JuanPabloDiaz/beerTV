@@ -112,4 +112,4 @@ npm run dev
 
 By contributing to this project, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
 
-Thank you for contributing to The Simpsons API!
+Thank you for contributing to Beer TV Ads!

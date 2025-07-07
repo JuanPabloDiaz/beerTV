@@ -54,9 +54,9 @@ export default function ApiDocs() {
         <div className="bg-white rounded-lg shadow-xl p-6 mb-8">
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
-              <Image src="/logo.png" alt="The Simpsons" width={150} height={90} priority />
+              <Image src="/logo.png" alt="Beer TV Ads" width={150} height={90} priority />
             </div>
-            <h1 className="text-4xl font-bold text-blue-900 mb-2">The Simpsons API Documentation</h1>
+            <h1 className="text-4xl font-bold text-blue-900 mb-2">Beer TV Ads API Documentation</h1>
             <p className="text-xl text-blue-800">
               Explore and test all the available API endpoints
             </p>

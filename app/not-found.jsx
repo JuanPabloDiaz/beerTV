@@ -1,5 +1,5 @@
 /**
- * Custom 404 Not Found page for The Simpsons app
+ * Custom 404 Not Found page for Beer TV Ads app
  * This page is automatically shown when a route is not found
  */
 
@@ -18,10 +18,10 @@ export default function NotFound() {
             404
           </h1>
           <h2 className="text-3xl font-bold text-white mb-2">
-            D&apos;oh! Page Not Found
+            D&apos;Oops! Page Not Found
           </h2>
           <p className="text-xl text-blue-100">
-            Looks like you&apos;ve wandered into the wrong Springfield!
+            Looks like you cracked open the wrong bottle!
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function NotFound() {
           <blockquote className="text-2xl italic text-yellow-300 mb-4">
             &ldquo;This is the worst day of my life.&rdquo;
           </blockquote>
-          <cite className="text-blue-200">- Homer Simpson</cite>
+          <cite className="text-blue-200">- Beer Fan</cite>
         </div>
 
         {/* Character Avatar Placeholder */}
@@ -71,8 +71,8 @@ export default function NotFound() {
             Did you know?
           </h3>
           <p className="text-blue-100 text-sm">
-            The Simpsons has been running for over 30 years and is the
-            longest-running American sitcom and animated series!
+            Beer TV Ads is a web application that allows users to view and
+            
           </p>
         </div>
 

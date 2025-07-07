@@ -7,8 +7,8 @@ import GoogleAnalytics from '@/lib/analytics'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'The Simpsons',
-  description: 'Full stack app to display characters from The Simpsons',
+  title: 'Beer TV Ads',
+  description: 'Bold, cinematic gallery of Super Bowl beer commercials',
 }
 
 export default function RootLayout({ children }) {

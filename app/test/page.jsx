@@ -1,6 +1,4 @@
-/**
- * Test page to directly fetch and display Simpsons character data
- */
+
 
 'use client'
 
@@ -43,7 +41,7 @@ export default function TestPage() {
   if (loading) {
     return (
       <Container className="py-5">
-        <h1 className="text-2xl font-bold mb-4">Loading Simpsons Characters...</h1>
+        <h1 className="text-2xl font-bold mb-4">Loading Beer TV Ads...</h1>
       </Container>
     )
   }

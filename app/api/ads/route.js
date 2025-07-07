@@ -4,7 +4,7 @@ import path from "path";
 
 // Function to get all ads from the JSON file
 function getAds() {
-  const filePath = path.join(process.cwd(), "data", "Beer-Tv-Ads.json");
+  const filePath = path.join(process.cwd(), "data", "beer-tv-ads.json");
   const fileContents = fs.readFileSync(filePath, "utf8");
   const data = JSON.parse(fileContents);
 

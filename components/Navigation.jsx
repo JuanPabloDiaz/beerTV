@@ -26,8 +26,8 @@ export const Navigation = () => {
         <Link href="/" className="flex-shrink-0">
           <div className="flex items-center">
             <Image
-              src="/logo.png"
-              alt="Beer TV Ads"
+              src="/logo.svg"
+              alt="BeerTV Logo"
               width={60}
               height={40}
               className="mr-2"

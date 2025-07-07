@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 /**
@@ -10,6 +11,10 @@ import React from 'react'
  * @param {string} [props.className] - Additional Tailwind classes.
  */
 export const VideoPlayer = ({ src, poster, className = '' }) => {
+  React.useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log('Render VideoPlayer with src', src)
+  }, [src])
   if (!src) return null
 
   return (

@@ -11,6 +11,7 @@ export const AdCard = ({ ad }) => {
   return (
     <div className="bg-gray-900 text-white rounded-lg overflow-hidden shadow-xl transition-transform hover:scale-105">
       <VideoPlayer key={ad.id} src={ad.video_link} className="" />
+      <p className="text-xs text-gray-500 px-2 truncate">{ad.video_link}</p>
       <div className="p-4 space-y-1">
         <h3 className="text-xl font-extrabold tracking-wide text-yellow-400">
           {ad.spot_products || ad.brand_name}

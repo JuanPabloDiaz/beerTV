@@ -19,6 +19,10 @@ export default function RootLayout({ children }) {
           src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
           strategy="afterInteractive"
         />
+        <Script
+          src="/debug-videos.js"
+          strategy="afterInteractive"
+        />
       </head>
       <GoogleAnalytics />
       <body

@@ -54,15 +54,47 @@ export default function HomePage() {
 
   return (
     <div className="bg-gradient-to-b from-black via-gray-900 to-gray-800 min-h-screen text-white pb-20">
-      {/* Hero section */}
+      {/* Featured video */}
       <Container className="py-10 flex flex-col items-center text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-yellow-400 drop-shadow-lg mb-6">
           Super Bowl Beer Ads
         </h1>
-        <p className="max-w-2xl text-lg md:text-xl text-gray-300 mb-10">
+        <p className="max-w-2xl text-lg md:text-xl text-gray-300 mb-6">
           Relive the most iconic, over-the-top beer commercials to ever grace
           the Super Bowl stage. Grab a cold one and enjoy the show!
         </p>
+        
+        {/* Debug buttons - temporary */}
+        <div className="mb-6 flex gap-2">
+          <button
+            onClick={() => {
+              if (window.forceClearVideoCache) {
+                window.forceClearVideoCache()
+              } else {
+                console.log('Debug tools not loaded yet')
+              }
+            }}
+            className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 text-sm"
+          >
+            🧹 Force Clear Cache
+          </button>
+          
+          <button
+            onClick={() => {
+              if (window.skipToUniqueContent) {
+                window.skipToUniqueContent()
+              } else {
+                console.log('Skipping manually...')
+                document.querySelectorAll('video').forEach(v => {
+                  if (v.duration > 10) v.currentTime = 5
+                })
+              }
+            }}
+            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm"
+          >
+            ⏭️ Skip to Unique Content (5s)
+          </button>
+        </div>
 
         {/* Featured video */}
         <div className="w-full max-w-4xl mb-12">
@@ -79,7 +111,7 @@ export default function HomePage() {
       {/* Paged grid of ads */}
       <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {pagedAds.map(ad => (
-          <AdCard key={ad.id} ad={ad} />
+          <AdCard key={ad.id} ad={ad} allAds={ads} />
         ))}
       </Container>
 

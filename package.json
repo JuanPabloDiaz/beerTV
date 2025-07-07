@@ -1,31 +1,32 @@
 {
-  "name": "beertv",
+  "name": "beer-tv-ads",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"app/**/*.js\" \"app/**/*.jsx\" \"app/**/*.ts\" \"app/**/*.tsx\" \"components/**/*.js\" \"components/**/*.jsx\" \"components/**/*.ts\" \"components/**/*.tsx\" \"app/**/*.css\"",
-    "format-check": "prettier --check \"app/**/*.js\" \"app/**/*.jsx\" \"app/**/*.ts\" \"app/**/*.tsx\" \"components/**/*.js\" \"components/**/*.jsx\" \"components/**/*.ts\" \"components/**/*.tsx\" \"app/**/*.css\"",
-    "clean": "rm -rf .next node_modules dist package-lock.json && npm install"
+    "format": "prettier --write \"{app,components,lib,utils,public,*.{js,jsx,ts,tsx,css,md,mdx,html,markdown,json}}/**/*.{js,jsx,ts,tsx,css,md,mdx,html,markdown,json}\"",
+    "clean": "rm -rf .next node_modules && npm install"
   },
   "dependencies": {
-    "next": "15.3.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "autoprefixer": "10.4.14",
+    "classnames": "^2.3.2",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "framer-motion": "^10.12.9",
+    "next": "13.4.1",
+    "next-swagger-doc": "^0.4.1",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-react": "^5.25.3",
+    "tailwindcss": "3.3.2"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.5",
-    "prettier": "^3.6.2",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "prettier": "^3.6.2"
   }
 }

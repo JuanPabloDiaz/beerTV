@@ -16,7 +16,7 @@ A full-stack Next.js application that showcases iconic beer commercials with a S
 - **Framework**: Next.js (App Router)
 - **Styling**: Tailwind CSS
 - **Language**: TypeScript
-- **Database**: Local JSON file (data/Beer-Tv-Ads.json)
+- **Database**: Local JSON file (data/beer-tv-ads.json)
 - **Backend**: Next.js API Routes
 
 ## 📋 Getting Started
@@ -42,7 +42,7 @@ A full-stack Next.js application that showcases iconic beer commercials with a S
     Header.tsx           # Application header
     VideoPlayer.tsx      # Video player component
   /data                  # Data source
-    Beer-Tv-Ads.json     # Local JSON database for beer ads
+    beer-tv-ads.json     # Local JSON database for beer ads
   /public                # Static assets
 ```
 
